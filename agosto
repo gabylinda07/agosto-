@@ -1,0 +1,25 @@
+<html>let xBolinha = 400;
+let yBolinha = 250;
+let diametro = 30
+
+let velocidadexBolinha = 9;
+let velocidadeyBolinha = 9;
+function setup() {
+  createCanvas(800, 500);
+}
+
+
+function draw() {
+  background(10);
+  circle(xBolinha, yBolinha, diametro)
+  xBolinha += velocidadexBolinha;
+  yBolinha += velocidadexBolinha;
+  
+if (xBolinha > width||
+ xBolinha < 0 ){
+  velocidadexBolinha *= -1
+}
+if ( yBolinha >height  || yBolinha <  0){
+ velocidadeyBolinha *= -1;
+}
+}l
